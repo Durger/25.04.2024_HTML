@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_1</title> 
+</head>
+<style>
+    .copyright{
+        color: green;
+    }
+    .hyphens {
+-moz-hyphens: auto;
+-ms-hyphens: auto;
+-webkit-hyphens: auto;
+hyphens: auto;
+}
+
+#Pch1{
+     /* white-space - форматирование текста видовами пробелов и переносов  */
+    white-space: nowrap;
+    color: blue;
+}
+#Pch2{
+    white-space: normal;
+    color: rgb(255, 162, 0);
+}
+#Pch3{
+    white-space: pre;
+    color: rgb(30, 208, 113);
+}
+#Pch4{
+    white-space: pre-line;
+    color: rgb(212, 35, 115);
+    text-decoration-style:double;
+    text-decoration-color: crimson;
+}
+#Pch5{
+    
+    white-space: pre-wrap;
+    color: rgb(227, 25, 25);
+    /* writing-mode: - направление текста  */
+    writing-mode: vertical-lr
+}
+#Pch6{
+    white-space: normal;
+    color: rgb(34, 44, 46);
+    width:50%;
+    writing-mode: vertical-lr
+   
+}
+
+#Pch11{
+    white-space: normal;
+    color: rgb(16, 75, 41);
+    width:50%;
+    /*    text-decoration: - декор текста  */
+    text-decoration: overline;
+}
+#Pch12{
+    white-space: normal;
+    color: rgb(71, 36, 55);
+    width:50%;
+     /*   text-transform: - размер регистра текста  */
+    text-transform:uppercase; 
+}
+#Pch13{
+    white-space: normal;
+    color: rgb(177, 195, 199);
+    width:50%;
+     /*   letter-spacing: - размер пробелов между буквами  */
+    letter-spacing: 10px;
+}
+#Pch14{
+    white-space: normal;
+    /*   word-spacing: - размер пробелов между словами  */
+    word-spacing: 50px;
+    color: rgb(84, 68, 81);
+    width:50%;
+}
+#Pch15{
+    white-space: normal;
+    color: rgb(224, 125, 44);
+    width:50%;
+}
+#Pch16{
+    white-space: normal;
+    color: rgb(60, 52, 145);
+    width:50%;
+    writing-mode: vertical-rl
+}
+ /* #DV1 - размер видимой области  */
+#DV1{
+    float: right ;
+    width: 50%;
+    /* height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    background-color: lightseagreen;
+}
+#DV2{
+    float: right ;
+    width: 50%;
+    /* height: 50%; */
+    background-color: chartreuse;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+}
+#text-decoration-color{
+    text-decoration: underline;
+    text-decoration-color: chocolate;
+    text-decoration-style: double;
+}
+
+</style>
+<body>
+<p>
+    <!-- dfn-выделение курсивом   /   ® -для спецсимвола  &#174 или &reg -->
+    <dfn> Chemistry &#174 </dfn>&reg - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, aut harum quas rem officiis fugit laborum ex fuga debitis! Error porro nostrum aliquam recusandae, ipsa aliquid. Reprehenderit labore harum in!    
+</p>
+
+<!-- ©-использование спецсимвола    -->
+<p class="copyright">
+    &copy;2024 Ltd "Audits systems"&trade;
+</p>
+
+<p>
+    <!-- &shy-использование для переноса по частям  -->
+    За&shy;ре&shy;ги&shy;стри&shy;ро&shy;ван&shy;ный&shy;
+</p>
+
+    <div id = "DV1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque accusantium culpa unde laudantium modi quo iste. Veritatis voluptatem ullam nulla quasi illo accusamus eos, nemo unde distinctio doloribus excepturi ipsam! 
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda soluta quo tempore amet quas ullam similique saepe error, sit dicta distinctio, esse quam commodi impedit eum enim laudantium quibusdam! Veritatis?
+        </p>
+        <!-- p*6>Lorem20 создание массива из 6 абзацев с случайными словами -->
+        <p id="Pch1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo velit hic est cupiditate numquam excepturi saepe repellat eum iure odit.</p>
+        <p id="Pch2">Neque esse illo iusto voluptatem, quis, aliquam placeat facere magnam, sunt culpa dolorum! Iure repudiandae veniam dolorum ipsum fugit consequuntur.</p>
+        <p id="Pch3">Possimus numquam pariatur quo, nesciunt voluptas cupiditate itaque iure necessitatibus laudantium qui sunt odit consectetur veniam illum, maiores ex suscipit?</p>
+        <p id="Pch4">Facilis fugit accusamus perspiciatis expedita fugiat? Asperiores repellat libero, facere consectetur eum natus exercitationem fugiat et. Iusto laudantium eos cum?</p>
+        <p id="Pch5">Voluptatibus, quisquam accusantium? Possimus cupiditate quidem, quis accusamus culpa ipsam provident incidunt dolorem similique minima eos, in eligendi et laborum?</p>
+        <p id="Pch6">Adipisci laborum nihil fugit, quam saepe blanditiis laboriosam soluta voluptatem magnam totam quas tempore sequi vitae at voluptates illo molestias.</p>
+    </div>
+
+    <div id = "DV2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque accusantium culpa unde laudantium modi quo iste. Veritatis voluptatem ullam nulla quasi illo accusamus eos, nemo unde distinctio doloribus excepturi ipsam! 
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda soluta quo tempore amet quas ullam similique saepe error, sit dicta distinctio, esse quam commodi impedit eum enim laudantium quibusdam! Veritatis?
+        </p>
+        <!-- p*6>Lorem20 создание массива из 6 абзацев с случайными словами -->
+        <p id="Pch11">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo velit hic est cupiditate numquam excepturi saepe repellat eum iure odit.</p>
+        <p id="Pch12">Neque esse illo iusto voluptatem, quis, aliquam placeat facere magnam, sunt culpa dolorum! Iure repudiandae veniam dolorum ipsum fugit consequuntur.</p>
+        <p id="Pch13">Possimus numquam pariatur quo, nesciunt voluptas cupiditate itaque iure necessitatibus laudantium qui sunt odit consectetur veniam illum, maiores ex suscipit?</p>
+        <p id="Pch14">Facilis fugit accusamus perspiciatis expedita fugiat? Asperiores repellat libero, facere consectetur eum natus exercitationem fugiat et. Iusto laudantium eos cum?</p>
+        <p id="Pch15">Voluptatibus, quisquam accusantium? Possimus cupiditate quidem, quis accusamus culpa ipsam provident incidunt dolorem similique minima eos, in eligendi et laborum?</p>
+        <p id="Pch16">Adipisci laborum nihil fugit, quam saepe blanditiis laboriosam soluta voluptatem magnam totam quas tempore sequi vitae at voluptates illo molestias.</p>
+    </div>
+
+    <div>
+        <p id="text-decoration-color">lorem</p>
+       
+    </div>
+
+</body>
+
+</html>
